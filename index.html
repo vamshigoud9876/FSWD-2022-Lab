@@ -7,6 +7,13 @@
     <title>Vamshi Website</title>
 </head>
 <body>
-    <h1>Welcome to Website</h1>
+    <canvas id="myCanvas" width="300" height="200" style="border:1px solid"></canvas>
+    <script>
+        var c=document.getElementById("myCanvas");
+        var ctx=c.getContext("2d");
+        ctx.moveTo(0,0);
+        ctx.lineTo(300,200);
+        ctx.stroke();
+    </script>
 </body>
 </html>
